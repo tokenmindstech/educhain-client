@@ -19,13 +19,15 @@ export default function MobileNav({
 }) {
   return (
     <div className="lg:hidden flex flex-1 items-center justify-between bg-white/95 px-6 py-2 rounded-full">
-      <Image
-        src="/assets/images/logo/educhain.png"
-        alt="Logo"
-        width={290}
-        height={104}
-        className="h-10 w-auto"
-      />
+      <Link href={"/"}>
+        <Image
+          src="/assets/images/logo/educhain.png"
+          alt="Logo"
+          width={290}
+          height={104}
+          className="h-10 w-auto"
+        />
+      </Link>
 
       <div className="items-center">
         <Drawer>

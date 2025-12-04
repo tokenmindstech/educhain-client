@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function TopBanner() {
   return (
-    <div className="px-3 sm:px-0 font-montserrat flex flex-col sm:flex-row gap-2 sm:gap-5 items-center justify-center py-2 bg-amber-100 w-full">
+    <div className="px-3 sm:px-0 font-montserrat flex flex-col sm:flex-row gap-2 sm:gap-5 items-center justify-center py-2 bg-amber-200/70 w-full">
       <Badge
         className="text-white text-xs sm:text-sm font-semibold"
         variant="destructive"

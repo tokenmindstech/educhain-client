@@ -11,13 +11,15 @@ export default function DekstopNav({
 }) {
   return (
     <div className="hidden lg:flex flex-1 items-center justify-between bg-white/95 px-8 py-1 rounded-full">
-      <Image
-        src="/assets/images/logo/educhain.png"
-        alt="Logo"
-        width={290}
-        height={104}
-        className="h-12 w-auto"
-      />
+      <Link href={"/"}>
+        <Image
+          src="/assets/images/logo/educhain.png"
+          alt="Logo"
+          width={290}
+          height={104}
+          className="h-12 w-auto"
+        />
+      </Link>
 
       <div className="flex flex-row items-center gap-16">
         <nav>
