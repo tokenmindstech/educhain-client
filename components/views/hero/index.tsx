@@ -17,7 +17,7 @@ export default function HeroSection() {
         />
 
         {/* Main Content */}
-        <div className="container mx-auto pt-30 py-28 relative z-10 space-y-8 px-10 sm:px-5 3xl:px-0">
+        <div className="container mx-auto py-28 relative z-10 space-y-8 px-10 sm:px-5 3xl:px-0">
           <div className="space-y-7 w-full lg:w-3/4 2xl:w-1/2 text-white font-montserrat">
             <h2 className="text-3xl md:text-4xl">EduChain</h2>
 

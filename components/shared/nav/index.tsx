@@ -54,7 +54,7 @@ export default function Nav() {
   return (
     <div
       className={`fixed w-full z-50 font-montserrat transition-all duration-300 ${
-        isScrolled ? "top-4 sm:top-6" : "top-20 sm:top-15"
+        isScrolled ? "top-5" : "top-20 sm:top-15"
       }`}
     >
       <div className="flex w-full items-center mx-auto container px-10 sm:px-5 3xl:px-0">

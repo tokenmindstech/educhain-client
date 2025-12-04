@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Montserrat, Sora } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/shared/nav";
+import Footer from "@/components/shared/footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -38,6 +39,7 @@ export default function RootLayout({
       >
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
