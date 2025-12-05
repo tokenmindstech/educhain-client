@@ -44,14 +44,14 @@ export default function AboutSection() {
           src={"/assets/decorative/book.png"}
           width={501}
           height={382}
-          className="w-40 sm:w-48 lg:w-64 h-auto absolute -left-10 lg:-left-20 top-25"
+          className="w-40 sm:w-48 lg:w-64 h-auto absolute -left-10 lg:-left-20 top-25 animate-float-vertical"
         />
         <Image
           alt="Decorative plane"
-          src={"/assets/decorative/plane.png"}
+          src="/assets/decorative/plane.png"
           width={501}
           height={382}
-          className="w-36 sm:w-42 lg:w-56 h-auto absolute -right-12 -top-12"
+          className="w-36 sm:w-42 lg:w-56 h-auto absolute -right-12 -top-12 animate-float"
         />
 
         {/* About Image */}
