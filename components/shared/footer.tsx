@@ -5,12 +5,12 @@ import { NAV_SOCIALS } from "@/lib/constant";
 
 export default function Footer() {
   return (
-    <footer className="py-28 bg-white rounded-t-3xl">
+    <footer className="py-12 sm:py-24 bg-white rounded-t-[50px] shadow-2xl">
       <div className="container mx-auto px-10 sm:px-5 3xl:px-0 flex flex-col">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-0 items-center justify-between">
           <Link href="/">
             <Image
-              src="/assets/images/logo/educhain.png"
+              src="/assets/logo/educhain.png"
               alt="Logo"
               width={290}
               height={104}
@@ -36,7 +36,7 @@ export default function Footer() {
 
         <Separator className="my-8" />
 
-        <div className="flex flex-col sm:flex-row items-center justify-between font-inter gap-3 sm:gap-0">
+        <div className="flex flex-col text-center sm:flex-row items-center justify-between font-inter gap-3 sm:gap-0">
           <p className="text-sm sm:text-base">The Education Blockchain Layer</p>
           <p className="text-sm sm:text-base">
             © EduChainX 2025. All rights reserved.

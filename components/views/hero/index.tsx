@@ -10,7 +10,7 @@ export default function HeroSection() {
         {/* Overlay Image */}
         <Image
           alt="Hero section overlay"
-          src={"/assets/images/overlay/hero-overlay.png"}
+          src={"/assets/overlay/grid-overlay.png"}
           width={4320}
           height={3156}
           className="w-full h-full object-cover absolute select-none pointer-events-none z-5"
@@ -39,7 +39,7 @@ export default function HeroSection() {
         {/* Background Image */}
         <Image
           alt="Hero section image"
-          src={"/assets/images/background/hero-image.png"}
+          src={"/assets/image/hero-image.png"}
           width={8663}
           height={4621}
           className="absolute object-cover bottom-0 h-full w-full z-5"

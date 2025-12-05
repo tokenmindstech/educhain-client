@@ -13,7 +13,7 @@ export default function DekstopNav({
     <div className="hidden lg:flex flex-1 items-center justify-between bg-white px-8 py-1 rounded-full">
       <Link href={"/"}>
         <Image
-          src="/assets/images/logo/educhain.png"
+          src="/assets/logo/educhain.png"
           alt="Logo"
           width={290}
           height={104}
@@ -45,7 +45,9 @@ export default function DekstopNav({
         </nav>
 
         <Link href={"/"} target="_blank">
-          <Button size="lg">Join Us</Button>
+          <Button variant="gradient" size="lg">
+            Join Us
+          </Button>
         </Link>
       </div>
     </div>

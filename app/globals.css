@@ -51,6 +51,12 @@
     #ffe6b0,
     #d8a944
   );
+  --background-image-radial-about: radial-gradient(
+    circle at top,
+    #ffe8bf 0%,
+    #fffbf2 64%,
+    #eef6ff 100%
+  );
 }
 
 :root {

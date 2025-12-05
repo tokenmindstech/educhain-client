@@ -21,7 +21,7 @@ export default function MobileNav({
     <div className="lg:hidden flex flex-1 items-center justify-between bg-white px-6 py-2 rounded-full">
       <Link href={"/"}>
         <Image
-          src="/assets/images/logo/educhain.png"
+          src="/assets/logo/educhain.png"
           alt="Logo"
           width={290}
           height={104}
@@ -79,7 +79,7 @@ export default function MobileNav({
                 })}
 
                 <Link href={"/"} target="_blank" className="w-full">
-                  <Button className="py-4 w-full text-xs gap-4 flex-1 mt-5">
+                  <Button variant="gradient" size="lg" className="w-full mt-4">
                     Join Us
                   </Button>
                 </Link>
