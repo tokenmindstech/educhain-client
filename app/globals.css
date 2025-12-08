@@ -57,6 +57,17 @@
     #fffbf2 40%,
     #eef6ff 80%
   );
+  --background-image-radial-problem: radial-gradient(
+    circle at top,
+    #ffffff 0%,
+    #fff5de 100%
+  );
+  --background-image-radial-solution: radial-gradient(
+    circle at top,
+    #a1bfff 0%,
+    #5b8bf4 30%,
+    #1f5adc 80%
+  );
 }
 
 :root {

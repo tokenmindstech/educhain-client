@@ -1,4 +1,3 @@
-import { title } from "process";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter, FaYoutube, FaDiscord } from "react-icons/fa6";
 
@@ -12,8 +11,8 @@ export const NAV_MENU = [
     href: "/#about",
   },
   {
-    title: "Technology",
-    href: "/#technology",
+    title: "Solution",
+    href: "/#why",
   },
   {
     title: "Products",
@@ -23,14 +22,6 @@ export const NAV_MENU = [
     title: "Ecosystem",
     href: "/#ecosystem",
   },
-];
-
-export const HIGHLIGHT_TEXT: string[] = [
-  "Certificates",
-  "Education",
-  "Global",
-  "On-Chain Certificates",
-  "Education",
 ];
 
 export const NAV_SOCIALS = [
@@ -54,4 +45,28 @@ export const NAV_SOCIALS = [
     icon: <FaDiscord size={30} />,
     href: "https://discord.gg/educhainx",
   },
+];
+
+export const HIGHLIGHT_TEXT: string[] = [
+  "Certificates",
+  "Education",
+  "Global",
+  "On-Chain Certificates",
+  "Education",
+];
+
+export const PROBLEM = [
+  "Fake diplomas & unverifiable certificates",
+  "No unified global profile for students",
+  "Employers can’t easily verify skills or course claims",
+  "Each institution keeps closed, siloed databases",
+  "No standard token layer for education in Web3",
+];
+
+export const SOLUTION = [
+  "Blockchain-verified certificates for any institution",
+  "Permanent on-chain academic identity that follows the learner globally",
+  "Skill verification via smart contracts – exam and assessment results stored on-chain",
+  "DAO-governed ecosystem for scholarships, grants, and upgrades",
+  "Universal utility token for payments, staking, and reputation",
 ];
