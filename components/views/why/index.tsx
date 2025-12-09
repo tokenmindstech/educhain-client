@@ -15,7 +15,7 @@ export default function WhySection() {
           Why Educhain
         </h1>
         <p
-          className="text-muted-foreground tracking-widest text-black"
+          className="text-muted-foreground tracking-widest"
           style={{ letterSpacing: "0.5rem" }}
         >
           EDUCHAIN FIXES THE PROBLEM
@@ -63,7 +63,7 @@ export default function WhySection() {
             <div className="mt-2 text-start flex flex-col gap-4">
               {SOLUTION.map((item, index) => (
                 <div key={index} className="flex flex-row gap-3">
-                  <div className="bg-white rounded-full p-0.5 shadow-2xl h-fit mt-0.5">
+                  <div className="bg-linear-to-b from-primary to-white border border-white to-60% rounded-full p-0.5 shadow-2xl h-fit mt-0.5">
                     <Check
                       strokeWidth={3}
                       className="size-4 text-black shrink-0"

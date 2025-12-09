@@ -70,3 +70,38 @@ export const SOLUTION = [
   "DAO-governed ecosystem for scholarships, grants, and upgrades",
   "Universal utility token for payments, staking, and reputation",
 ];
+
+export const UTILITY_USAGE = [
+  "Prevents fake diplomas",
+  "Creates globally verifiable academic identity",
+  "Works for online or in-person education",
+];
+
+export const UTILITY_FEATURES = [
+  {
+    title: "Training & Course Payments",
+    description:
+      "Use EduChain to pay for courses, workshops, bootcamps, exams, and live sessions",
+    list: [
+      "Native payment & settlement layer for education platforms",
+      "Fast, borderless crypto payments",
+    ],
+  },
+  {
+    title: "On-Chain Student Academic Identity",
+    description: "Every learner gets a permanent blockchain-based “Web3 CV.”",
+    list: [
+      "Stores completed courses, skills, certificates, and exam results",
+      "Instantly verifiable by employers",
+    ],
+  },
+  {
+    title: "Global Instructor Marketplace",
+    description:
+      "Instructors and academies list courses in a decentralized global marketplace.",
+    list: [
+      "Stake EduChain to become a certified instructor",
+      "More staked = higher revenue share & visibility",
+    ],
+  },
+];
