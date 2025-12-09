@@ -15,12 +15,16 @@ export const NAV_MENU = [
     href: "/#why",
   },
   {
-    title: "Products",
-    href: "/#products",
+    title: "Utilities",
+    href: "/#utility",
   },
   {
-    title: "Ecosystem",
-    href: "/#ecosystem",
+    title: "Tokenomics",
+    href: "/#tokenomics",
+  },
+  {
+    title: "Roadmap",
+    href: "/#roadmap",
   },
 ];
 

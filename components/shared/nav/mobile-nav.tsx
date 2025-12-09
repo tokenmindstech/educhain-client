@@ -67,7 +67,9 @@ export default function MobileNav({
                     <DrawerClose asChild key={item.title}>
                       <Link
                         href={item.href}
-                        className="text-lg transition-colors"
+                        className={`text-lg transition-colors ${
+                          isActive && "font-semibold"
+                        }`}
                         style={{
                           color: isActive ? "#221e51" : "#666666",
                         }}

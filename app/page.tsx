@@ -4,6 +4,7 @@ import AboutSection from "@/components/views/about";
 import WhySection from "@/components/views/why";
 import { HIGHLIGHT_TEXT } from "@/lib/constant";
 import UtilitySection from "@/components/views/utility";
+import TokenomicsSection from "@/components/views/tokenomics";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutSection />
       <WhySection />
       <UtilitySection />
+      <TokenomicsSection />
       <AnimatedHighlights items={HIGHLIGHT_TEXT} variant="secondary" />
     </div>
   );
