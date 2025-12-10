@@ -45,9 +45,9 @@ export default function TokenomicsSection() {
               src={"/assets/decorative/key.png"}
               width={102}
               height={102}
-              className="w-10"
+              className="w-8 md:w-10"
             />
-            <div>Key Facts</div>
+            <div className="text-sm md:text-base">Key Facts</div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-0 items-start ">

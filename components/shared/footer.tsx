@@ -5,8 +5,8 @@ import { NAV_SOCIALS } from "@/lib/constant";
 
 export default function Footer() {
   return (
-    <footer className="py-12 sm:py-24 bg-white rounded-t-[50px] shadow-2xl">
-      <div className="container mx-auto px-10 sm:px-5 3xl:px-0 flex flex-col">
+    <footer className="pt-36 pb-24 bg-white rounded-t-3xl shadow-2xl">
+      <div className="w-[90%] mx-auto px-10 sm:px-5 3xl:px-0 flex flex-col">
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-0 items-center justify-between">
           <Link href="/">
             <Image

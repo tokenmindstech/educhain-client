@@ -166,34 +166,6 @@
   }
 }
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(10px, 10px);
-  }
-}
-
-@keyframes float-vertical {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15);
-  }
-}
-
 .animate-marquee {
   animation: marquee 25s linear infinite;
-}
-
-.animate-float {
-  animation: float 4s ease-in-out infinite;
-}
-
-.animate-float-vertical {
-  animation: float-vertical 4s ease-in-out infinite;
 }

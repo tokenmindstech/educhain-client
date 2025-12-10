@@ -109,3 +109,30 @@ export const UTILITY_FEATURES = [
     ],
   },
 ];
+
+export const ROADPMAP = [
+  {
+    timeline: "2025 Q1-Q2",
+    milestones: [
+      "Deploy Smart Contract Infrastructure",
+      "Launch Certificate Issuance Module",
+      "Initiate Community Building Programs",
+    ],
+  },
+  {
+    timeline: "2025 Q3-Q4",
+    milestones: [
+      "Launch Decentralized Marketplace",
+      "Implement Staking and Rewards System",
+      "Expand to Additional Blockchains",
+    ],
+  },
+  {
+    timeline: "2026 Q1-Q2",
+    milestones: [
+      "Smart contract deployment upgrades",
+      "Global certificate issuance system v2",
+      "Instructor marketplace launch expansion",
+    ],
+  },
+];

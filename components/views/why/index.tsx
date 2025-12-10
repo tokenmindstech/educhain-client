@@ -38,7 +38,7 @@ export default function WhySection() {
             <div className="mt-2 text-start flex flex-col gap-4">
               {PROBLEM.map((item, index) => (
                 <div key={index} className="flex flex-row gap-3">
-                  <div className="bg-white rounded-full p-0.5 shadow-2xl h-fit mt-0.5">
+                  <div className="bg-white rounded-full p-0.5 shadow-[0_4px_8px_rgba(0,0,0,0.15)] h-fit mt-0.5">
                     <X className="size-4 shrink-0" />
                   </div>
 

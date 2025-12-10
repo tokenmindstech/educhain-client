@@ -18,7 +18,7 @@ export default function MobileNav({
   activeSection: string;
 }) {
   return (
-    <div className="lg:hidden flex flex-1 items-center justify-between bg-white px-6 py-2 rounded-full">
+    <div className="lg:hidden flex flex-1 items-center justify-between bg-white/90 px-6 py-2 rounded-full">
       <Link href={"/"}>
         <Image
           src="/assets/logo/educhain.png"

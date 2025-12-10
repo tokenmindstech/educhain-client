@@ -28,18 +28,18 @@ export default function UtilitySection() {
 
           {/* Decorative */}
           <Image
-            alt="Decorative book"
-            src={"/assets/decorative/book.png"}
-            width={501}
-            height={382}
-            className="w-28 sm:w-40 lg:w-52 xl:w-60 h-auto absolute -right-5 sm:-right-10 lg:right-13 -top-11 lg:-top-13 animate-float-vertical"
+            alt="Decorative book line"
+            src={"/assets/decorative/book-line.png"}
+            width={1523}
+            height={914}
+            className="w-40 sm:w-50 lg:w-60 xl:w-90 h-auto absolute right-0 lg:right-6 top -top-10 lg:-top-15"
           />
           <Image
             alt="Decorative plane"
             src="/assets/decorative/plane.png"
             width={501}
             height={382}
-            className="w-20 sm:w-24 lg:w-28 h-auto absolute -right-8 lg:-right-15 bottom-20 lg:bottom-15 animate-float"
+            className="w-20 sm:w-24 lg:w-28 h-auto absolute -right-8 lg:-right-15 bottom-20 lg:bottom-15"
           />
 
           {/* Content */}
@@ -72,7 +72,7 @@ export default function UtilitySection() {
 
               <Button
                 size="lg"
-                variant="gradient"
+                variant="gradientSecondary"
                 className="self-center sm:self-end w-full sm:w-auto text-xs sm:text-sm"
               >
                 Fee to issue each certificate?

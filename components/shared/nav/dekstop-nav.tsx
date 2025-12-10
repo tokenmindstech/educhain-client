@@ -10,7 +10,7 @@ export default function DekstopNav({
   activeSection: string;
 }) {
   return (
-    <div className="hidden lg:flex flex-1 items-center justify-between bg-white px-8 py-1 rounded-full">
+    <div className="hidden lg:flex flex-1 items-center justify-between bg-white/90 px-8 py-1 rounded-full">
       <Link href={"/"}>
         <Image
           src="/assets/logo/educhain.png"
