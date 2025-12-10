@@ -136,3 +136,12 @@ export const ROADPMAP = [
     ],
   },
 ];
+
+export const TOKEN_INFO = {
+  name: "EduChain",
+  ticker: "EDUCHAIN",
+  network: "BNB Chain",
+  totalSupply: 10_000_000_000,
+  utility:
+    "Certificate issuance, payments, staking, exams, enterprise access, reputation layer",
+};

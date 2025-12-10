@@ -1,21 +1,12 @@
 import Image from "next/image";
-import { PROBLEM, SOLUTION } from "@/lib/constant";
 import { Card } from "@/components/ui/card";
-
-const TOKEN_INFO = {
-  name: "EduChain",
-  ticker: "EDUCHAIN",
-  network: "BNB Chain",
-  totalSupply: 10_000_000_000,
-  utility:
-    "Certificate issuance, payments, staking, exams, enterprise access, reputation layer",
-};
+import { TOKEN_INFO } from "@/lib/constant";
 
 export default function TokenomicsSection() {
   return (
     <section
       id="tokenomics"
-      className="bg-white relative h-fit min-h-screen w-full py-24 "
+      className="bg-white relative h-fit min-h-screen w-full py-24"
     >
       <div className="mx-auto container font-montserrat text-center space-y-6 px-10 sm:px-5 3xl:px-0 flex flex-col items-center">
         {/* Title */}
