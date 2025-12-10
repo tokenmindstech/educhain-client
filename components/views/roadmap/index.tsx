@@ -1,6 +1,7 @@
-import { Card } from "@/components/ui/card";
 import { ROADPMAP } from "@/lib/constant";
 import Image from "next/image";
+import FooterCard from "./footer-card";
+import RoadmapCard from "./roadmap-card";
 
 export default function RoadmapSection() {
   return (
@@ -45,53 +46,12 @@ export default function RoadmapSection() {
 
           <div className="flex flex-col gap-15">
             {ROADPMAP.map((item, index) => (
-              <div
-                key={index}
-                className="relative rounded-3xl bg-radial-problem p-8 border-3 border-white shadow-xl"
-              >
-                {/* Timeline Badge */}
-                <div className="bg-radial-solution w-fit backdrop-blur-sm rounded-full px-4 py-1.5 absolute -top-5 left-6 sm:left-8">
-                  <h2 className="text-base font-semibold text-white">
-                    {item.timeline}
-                  </h2>
-                </div>
-
-                {/* Milestones */}
-                <ul className="space-y-3 text-black font-semibold">
-                  {item.milestones.map((milestone, idx) => (
-                    <li key={idx} className="flex items-center gap-3">
-                      <span className="text-black shrink-0">•</span>
-                      <span className="text-sm sm:text-base leading-relaxed">
-                        {milestone}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <RoadmapCard key={index} item={item} />
             ))}
           </div>
         </div>
 
-        {/* Card Footer */}
-        <Card className="p-5 sm:p-10 lg:p-15 absolute -bottom-15 left-10 right-10 sm:left-5 sm:right-5 3xl:left-0 3xl:right-0 bg-linear-to-b from-primary to-primary-dark border-white/50 border-3 rounded-4xl flex items-center justify-end shadow-xl">
-          <Image
-            alt="Roadmap image"
-            src="/assets/image/roadmap-image.png"
-            width={3240}
-            height={981}
-            className="w-9/10 mx-auto h-auto object-cover"
-          />
-
-          <div className="text-white space-y-4 md:space-y-6 text-center">
-            <h1 className="text-xl sm:text-3xl md:text-4xl xl:text-5xl font-semibold">
-              Help Build the Future of Global Education
-            </h1>
-            <p className="text-xs lg:text-base">
-              EduChain is turning education into a transparent, verifiable, and
-              borderless ecosystem
-            </p>
-          </div>
-        </Card>
+        <FooterCard />
       </div>
     </section>
   );
