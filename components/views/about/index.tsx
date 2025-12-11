@@ -26,7 +26,10 @@ export default function AboutSection() {
   return (
     <section id="about" className="min-h-screen bg-radial-about py-24">
       <div className="container mx-auto px-10 sm:px-5 3xl:px-0">
-        <Card className="relative bg-linear-to-b from-[#1F5ADC] to-primary grid grid-cols xl:grid-cols-2 p-10 sm:p-15 items-center rounded-4xl">
+        <Card
+          data-aos="zoom-in"
+          className="relative bg-linear-to-b from-[#1F5ADC] to-primary grid grid-cols xl:grid-cols-2 p-10 sm:p-15 items-center rounded-4xl"
+        >
           {/* Overlay */}
           <Image
             alt="about section overlay"
@@ -39,6 +42,8 @@ export default function AboutSection() {
           {/* Decorative */}
           <Image
             alt="Decorative book"
+            data-aos="zoom-in"
+            data-aos-delay="250"
             src={"/assets/decorative/book.png"}
             width={501}
             height={382}
@@ -46,6 +51,8 @@ export default function AboutSection() {
           />
           <Image
             alt="Decorative plane"
+            data-aos="zoom-in"
+            data-aos-delay="500"
             src="/assets/decorative/plane.png"
             width={501}
             height={382}

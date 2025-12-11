@@ -7,11 +7,16 @@ interface UtilityCardProps {
     description: string;
     list: string[];
   };
+  index: number;
 }
 
-export default function UtilityCard({ feature }: UtilityCardProps) {
+export default function UtilityCard({ feature, index }: UtilityCardProps) {
   return (
-    <Card className="p-8 rounded-3xl h-full text-start gap-2 flex flex-col justify-between">
+    <Card
+      data-aos="flip-left"
+      data-aos-delay={index * 250}
+      className="p-8 rounded-3xl h-full text-start gap-2 flex flex-col justify-between"
+    >
       <h3 className="text-2xl font-bold white">{feature.title}</h3>
       <p className="text-sm font-medium">{feature.description}</p>
 

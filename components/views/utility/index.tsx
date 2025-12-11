@@ -13,11 +13,17 @@ export default function UtilitySection() {
     >
       <div className="container mx-auto font-montserrat text-center space-y-8 px-10 sm:px-5 3xl:px-0">
         {/* Title */}
-        <h1 className="text-4xl sm:text-5xl font-semibold text-black">
+        <h1
+          data-aos="fade-down"
+          className="text-4xl sm:text-5xl font-semibold text-black"
+        >
           Key Utilities
         </h1>
 
-        <Card className="mt-15 border-3 border-white relative bg-linear-to-b from-[#1F5ADC] to-primary p-8 rounded-3xl">
+        <Card
+          data-aos="fade-up"
+          className="mt-15 border-3 border-white relative bg-linear-to-b from-[#1F5ADC] to-primary p-8 rounded-3xl"
+        >
           {/* Overlay */}
           <Image
             alt="utility section overlay"
@@ -85,7 +91,7 @@ export default function UtilitySection() {
         {/* Feature Cards */}
         <div className="grid grid-cols sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {UTILITY_FEATURES.map((feature, index) => (
-            <UtilityCard key={index} feature={feature} />
+            <UtilityCard key={index} index={index} feature={feature} />
           ))}
         </div>
       </div>

@@ -3,11 +3,16 @@ interface RoadmapCardProps {
     timeline: string;
     milestones: string[];
   };
+  index: number;
 }
 
-export default function RoadmapCard({ item }: RoadmapCardProps) {
+export default function RoadmapCard({ item, index }: RoadmapCardProps) {
   return (
-    <div className="relative rounded-3xl bg-radial-problem p-8 border-3 border-white shadow-xl">
+    <div
+      data-aos="fade-up"
+      data-aos-delay={250 + index * 250}
+      className="relative rounded-3xl bg-radial-problem p-8 border-3 border-white shadow-xl"
+    >
       {/* Timeline Badge */}
       <div className="bg-radial-solution w-fit backdrop-blur-sm rounded-full px-4 py-1.5 absolute -top-5 left-6 sm:left-8">
         <h2 className="text-base font-semibold text-white">{item.timeline}</h2>

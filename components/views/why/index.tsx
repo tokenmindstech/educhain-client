@@ -11,10 +11,14 @@ export default function WhySection() {
     >
       <div className="mx-auto container font-montserrat text-center space-y-5 ">
         {/* Title */}
-        <h1 className="text-4xl sm:text-5xl font-semibold text-black">
+        <h1
+          data-aos="fade-down"
+          className="text-4xl sm:text-5xl font-semibold text-black"
+        >
           Why Educhain
         </h1>
         <p
+          data-aos="fade-up"
           className="text-muted-foreground tracking-widest"
           style={{ letterSpacing: "0.5rem" }}
         >
@@ -24,7 +28,11 @@ export default function WhySection() {
         {/* Content */}
         <div className="flex flex-col lg:flex-row gap-24 lg:gap-10 items-center justify-center mt-24">
           {/* LEFT */}
-          <Card className="relative bg-radial-problem w-full sm:w-[430px] p-6 py-12 border-3 border-white text-black rounded-3xl shadow-xl">
+          <Card
+            data-aos="fade-right"
+            data-aos-delay="200"
+            className="relative bg-radial-problem w-full sm:w-[430px] p-6 py-12 border-3 border-white text-black rounded-3xl shadow-xl"
+          >
             <Image
               alt="Decorative warning"
               src={"/assets/decorative/warning.png"}
@@ -49,7 +57,11 @@ export default function WhySection() {
           </Card>
 
           {/* RIGHT */}
-          <Card className="relative bg-radial-solution w-full sm:w-[430px] p-6 py-12 border-3 border-white text-white rounded-3xl shadow-xl">
+          <Card
+            data-aos="fade-left"
+            data-aos-delay="200"
+            className="relative bg-radial-solution w-full sm:w-[430px] p-6 py-12 border-3 border-white text-white rounded-3xl shadow-xl"
+          >
             <Image
               alt="Decorative lamp"
               src={"/assets/decorative/lamp.png"}

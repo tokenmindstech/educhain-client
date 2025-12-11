@@ -35,10 +35,13 @@ export default function RoadmapSection() {
         {/* Title & Roadmap */}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-20 pb-[300px] sm:pb-[400px] md:pb-[450px] lg:pb-[600px] xl:pb-[700px]">
           <div className="text-white space-y-8">
-            <h1 className="text-4xl sm:text-5xl font-semibold">
+            <h1
+              data-aos="fade-down"
+              className="text-4xl sm:text-5xl font-semibold"
+            >
               Roadmap to Global Education
             </h1>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="200">
               EduChain is rolling out in phases, from infrastructure and
               marketplace, to AI-powered assessments and full DAO governance
             </p>
@@ -46,7 +49,7 @@ export default function RoadmapSection() {
 
           <div className="flex flex-col gap-15">
             {ROADPMAP.map((item, index) => (
-              <RoadmapCard key={index} item={item} />
+              <RoadmapCard key={index} index={index} item={item} />
             ))}
           </div>
         </div>

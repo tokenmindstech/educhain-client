@@ -17,7 +17,10 @@ export default function TokenInfo({
   utility,
 }: TokenInfo) {
   return (
-    <Card className="mt-5 relative bg-radial-problem border-4 border-white text-black w-full md:w-[750px] p-8 rounded-3xl shadow-xl">
+    <Card
+      data-aos="fade-up"
+      className="mt-5 relative bg-radial-problem border-4 border-white text-black w-full md:w-[750px] p-8 rounded-3xl shadow-xl"
+    >
       {/* Absolute Label */}
       <div className="absolute flex flex-row items-center gap-2 -top-5 right-5 px-3 py-1 bg-radial-solution rounded-2xl text-white font-semibold text-lg">
         <Image
