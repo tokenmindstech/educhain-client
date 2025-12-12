@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getSectionFromHref } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { NAV_MENU } from "@/lib/constant";
+import { NAV_MENU, TOKEN_INFO } from "@/lib/constant";
 
 export default function DekstopNav({
   activeSection,
@@ -44,7 +44,7 @@ export default function DekstopNav({
           </ul>
         </nav>
 
-        <Link href={"/"} target="_blank">
+        <Link href={TOKEN_INFO.buyUrl} target="_blank">
           <Button variant="gradient" size="lg">
             Join Us
           </Button>

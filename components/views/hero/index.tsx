@@ -1,7 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import TopBanner from "./top-banner";
+import PresaleInfo from "./presale-info";
+import { useQuery } from "@tanstack/react-query";
 
 export default function HeroSection() {
+  const { data, isLoading, error } = useQuery<APITokenInfoResponse, Error>({
+    queryKey: ["tokenInfo"],
+    queryFn: async () => {
+      const response = await fetch("/api/token");
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json() as Promise<APITokenInfoResponse>;
+    },
+  });
+
   return (
     <section id="home">
       <TopBanner />
@@ -40,18 +55,7 @@ export default function HeroSection() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4">
-            <div
-              data-aos="zoom-in"
-              data-aos-delay="750"
-              className="bg-white/95 rounded-4xl h-70 w-full lg:w-140"
-            />
-            <div
-              data-aos="zoom-in"
-              data-aos-delay="1000"
-              className="bg-white/95 rounded-4xl h-70 w-full lg:w-140"
-            />
-          </div>
+          <PresaleInfo isLoading={isLoading} data={data} error={error} />
         </div>
 
         {/* Background Image */}

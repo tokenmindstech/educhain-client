@@ -10,7 +10,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getSectionFromHref } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { NAV_MENU } from "@/lib/constant";
+import { NAV_MENU, TOKEN_INFO } from "@/lib/constant";
 
 export default function MobileNav({
   activeSection,
@@ -80,7 +80,11 @@ export default function MobileNav({
                   );
                 })}
 
-                <Link href={"/"} target="_blank" className="w-full">
+                <Link
+                  href={TOKEN_INFO.buyUrl}
+                  target="_blank"
+                  className="w-full"
+                >
                   <Button variant="gradient" size="lg" className="w-full mt-4">
                     Join Us
                   </Button>

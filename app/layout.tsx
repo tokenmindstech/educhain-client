@@ -3,6 +3,7 @@ import { Inter, Montserrat, Sora } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/shared/nav";
 import AosInit from "@/components/shared/aos-init";
+import QueryProvider from "@/components/providers/react-query";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -37,9 +38,11 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${sora.variable} ${montserrat.variable} antialiased`}
       >
-        <AosInit />
-        <Nav />
-        {children}
+        <QueryProvider>
+          <AosInit />
+          <Nav />
+          {children}
+        </QueryProvider>
       </body>
     </html>
   );

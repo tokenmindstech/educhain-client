@@ -1,7 +1,7 @@
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter, FaYoutube, FaDiscord } from "react-icons/fa6";
 
-export const NAV_MENU = [
+export const NAV_MENU: NavMenuItem[] = [
   {
     title: "Home",
     href: "/#home",
@@ -28,7 +28,7 @@ export const NAV_MENU = [
   },
 ];
 
-export const NAV_SOCIALS = [
+export const NAV_SOCIALS: SocialItem[] = [
   {
     label: "Twitter",
     icon: <FaXTwitter size={30} />,
@@ -59,7 +59,7 @@ export const HIGHLIGHT_TEXT: string[] = [
   "Education",
 ];
 
-export const PROBLEM = [
+export const PROBLEM: string[] = [
   "Fake diplomas & unverifiable certificates",
   "No unified global profile for students",
   "Employers can’t easily verify skills or course claims",
@@ -67,7 +67,7 @@ export const PROBLEM = [
   "No standard token layer for education in Web3",
 ];
 
-export const SOLUTION = [
+export const SOLUTION: string[] = [
   "Blockchain-verified certificates for any institution",
   "Permanent on-chain academic identity that follows the learner globally",
   "Skill verification via smart contracts – exam and assessment results stored on-chain",
@@ -75,13 +75,13 @@ export const SOLUTION = [
   "Universal utility token for payments, staking, and reputation",
 ];
 
-export const UTILITY_USAGE = [
+export const UTILITY_USAGE: string[] = [
   "Prevents fake diplomas",
   "Creates globally verifiable academic identity",
   "Works for online or in-person education",
 ];
 
-export const UTILITY_FEATURES = [
+export const UTILITY_FEATURES: UtilityItem[] = [
   {
     title: "Training & Course Payments",
     description:
@@ -110,7 +110,7 @@ export const UTILITY_FEATURES = [
   },
 ];
 
-export const ROADPMAP = [
+export const ROADPMAP: RoadmapItem[] = [
   {
     timeline: "2025 Q1-Q2",
     milestones: [
@@ -137,11 +137,12 @@ export const ROADPMAP = [
   },
 ];
 
-export const TOKEN_INFO = {
+export const TOKEN_INFO: TokenInfo = {
   name: "EduChain",
   ticker: "EDUCHAIN",
   network: "BNB Chain",
   totalSupply: 10_000_000_000,
   utility:
     "Certificate issuance, payments, staking, exams, enterprise access, reputation layer",
+  buyUrl: "https://buy.educhainx.com",
 };
