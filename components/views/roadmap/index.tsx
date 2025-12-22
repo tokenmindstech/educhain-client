@@ -34,7 +34,7 @@ export default function RoadmapSection() {
       <div className="relative container mx-auto font-montserrat px-10 sm:px-5 3xl:px-0 z-10">
         {/* Title & Roadmap */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 pb-[300px] sm:pb-[400px] md:pb-[450px] lg:pb-[600px] xl:pb-[700px]">
-          <div className="text-white space-y-8 pt-24">
+          <div className="text-white space-y-8 lg:pt-24">
             <h1
               data-aos="fade-down"
               className="text-4xl sm:text-5xl font-semibold"
