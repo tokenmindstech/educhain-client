@@ -10,7 +10,7 @@ export default function RoadmapCard({ item, index }: RoadmapCardProps) {
   return (
     <div
       data-aos="fade-up"
-      data-aos-delay={250 + index * 250}
+      data-aos-delay={250 + index * 50}
       className="relative rounded-3xl bg-radial-problem p-8 border-3 border-white shadow-xl"
     >
       {/* Timeline Badge */}
@@ -19,7 +19,7 @@ export default function RoadmapCard({ item, index }: RoadmapCardProps) {
       </div>
 
       {/* Milestones */}
-      <ul className="space-y-3 text-black font-semibold">
+      <ul className="space-y-2 text-black font-semibold">
         {item.milestones.map((milestone, idx) => (
           <li key={idx} className="flex items-center gap-3">
             <span className="text-black shrink-0">•</span>

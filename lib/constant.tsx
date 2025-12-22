@@ -112,27 +112,64 @@ export const UTILITY_FEATURES: UtilityItem[] = [
 
 export const ROADPMAP: RoadmapItem[] = [
   {
-    timeline: "2025 Q1-Q2",
-    milestones: [
-      "Deploy Smart Contract Infrastructure",
-      "Launch Certificate Issuance Module",
-      "Initiate Community Building Programs",
-    ],
-  },
-  {
-    timeline: "2025 Q3-Q4",
-    milestones: [
-      "Launch Decentralized Marketplace",
-      "Implement Staking and Rewards System",
-      "Expand to Additional Blockchains",
-    ],
-  },
-  {
-    timeline: "2026 Q1-Q2",
+    timeline: "2026 Q1–Q2",
     milestones: [
       "Smart contract deployment upgrades",
       "Global certificate issuance system v2",
       "Instructor marketplace launch expansion",
+      "EduChainX Platform v1 launch",
+      "Token Generation Event (TGE)",
+    ],
+  },
+  {
+    timeline: "2026 Q3–Q4",
+    milestones: [
+      "Instructor marketplace full launch",
+      "Large-scale institution onboarding",
+      "Ecosystem integrations with leading education platforms",
+      "ETX smart contract live",
+      "First 100 accredited institutions onboarded",
+    ],
+  },
+  {
+    timeline: "2027",
+    milestones: [
+      "Full Marketplace v2 with educator tools",
+      "Skill-NFT global rollout",
+      "ETX → EDU conversion halving mechanism",
+      "EduDAO governance launch",
+      "Mobile app for student on-chain identity",
+      "1M learner milestone",
+    ],
+  },
+  {
+    timeline: "2028",
+    milestones: [
+      "Enterprise API licensing",
+      "AI-assisted learning verification engine",
+      "Global tutor network (ESD payments)",
+      "500 accredited institutions",
+      "Revenue-based EDU buyback v2",
+    ],
+  },
+  {
+    timeline: "2029",
+    milestones: [
+      "Global education credentials registry",
+      "Multichain interoperability (Ethereum, BNB, Solana)",
+      "Government-level accreditation partnerships",
+      "10M learners",
+      "Marketplace revenue > $200M",
+    ],
+  },
+  {
+    timeline: "2030",
+    milestones: [
+      "Fully autonomous EduDAO",
+      "Zero-fraud credential verification",
+      "Skill Passport NFT for global employers",
+      "50M learners",
+      "Sustainable emissions endpoint",
     ],
   },
 ];
