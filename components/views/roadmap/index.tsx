@@ -34,7 +34,7 @@ export default function RoadmapSection() {
     <section id="roadmap" className="relative pt-24 scroll-mt-12">
       {/* Overlay Image */}
       <Image
-        alt="Hero section overlay"
+        alt="Roadmap section overlay"
         src={"/assets/overlay/grid-overlay.png"}
         width={4320}
         height={3156}
@@ -88,7 +88,7 @@ export default function RoadmapSection() {
               setApi={setApi}
               className="w-full"
             >
-              <CarouselContent className="h-[600px] mt-5 gap-5 pr-0">
+              <CarouselContent className="h-[550px] mt-4.5 gap-5 pr-0">
                 {ROADPMAP.map((item, index) => (
                   <CarouselItem key={index} className="pt-0 pb-2 basis-1/2">
                     <RoadmapCard item={item} />
@@ -98,11 +98,11 @@ export default function RoadmapSection() {
             </Carousel>
 
             {/* Scroll Indicator */}
-            <div className="absolute -right-5 lg:-right-7 top-1/2 -translate-y-1/2 flex flex-col gap-2 z-20">
+            <div className="absolute -bottom-5 sm:-bottom-10 left-1/2 -translate-x-1/2 flex flex-row gap-2 z-20">
               {ROADPMAP.map((_, index) => (
                 <div
                   key={index}
-                  className={`w-1.5 h-8 rounded-full transition-all cursor-pointer duration-300 ${
+                  className={`w-4 h-1 sm:w-8 sm:h-1.5 rounded-full transition-all cursor-pointer duration-300 ${
                     index === current
                       ? "bg-white"
                       : "bg-white/30 hover:bg-white/50"
