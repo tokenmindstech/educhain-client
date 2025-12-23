@@ -46,7 +46,7 @@ export default function MobileNav({
               {/* Logo and close */}
               <div className="flex justify-between items-center mb-8">
                 <Image
-                  src="/assets/images/logo/educhain.png"
+                  src="/assets/logo/educhain.png"
                   alt="Logo"
                   width={290}
                   height={104}
@@ -67,7 +67,7 @@ export default function MobileNav({
                     <DrawerClose asChild key={item.title}>
                       <Link
                         href={item.href}
-                        className={`text-lg transition-colors ${
+                        className={`text-md sm:text-lg transition-colors ${
                           isActive && "font-semibold"
                         }`}
                         style={{
